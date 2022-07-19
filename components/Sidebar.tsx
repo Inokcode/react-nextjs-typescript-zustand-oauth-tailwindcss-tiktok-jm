@@ -37,7 +37,9 @@ const Sidebar = () => {
               </div>
             </Link>
           </div>
-          {!userProfile && (
+
+          {/* this part removed due to google new implemention changes */}
+          {/* {!userProfile && (
             <div className="px-2 py-4 hidden xl:block">
               <p className="text-gray-400">
                 Log in to like and comment on videos
@@ -58,9 +60,10 @@ const Sidebar = () => {
                   )}
                   cookiePolicy="single_host_origin"
                 /> */}
-              </div>
+          {/* </div>
             </div>
-          )}
+          )} */}
+
           <Discover />
           <SuggestedAccounts />
           <Footer />
